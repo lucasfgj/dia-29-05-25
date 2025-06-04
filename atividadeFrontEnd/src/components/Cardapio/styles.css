@@ -1,0 +1,114 @@
+/* src\components\ListaDeUsuarios\styles.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+
+.lista-pratos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95vw;
+  height: 80vh;
+  gap: 25px;
+}
+
+.semCadastro{
+    width: 20vw;
+    font-size: 18px;
+    
+    text-align: center;
+    background-color: #d3d0d0;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.card {
+  width: 320px;
+  height: 560px;
+  border-radius: 15px;
+  border: 0.5px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cardapio {
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+}
+
+.cardapio img {
+  width: 100%;
+  height: 260px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.cardapio strong,
+.cardapio p {
+  margin: 0 15px;
+}
+.cardapio .nomePrato {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+.cardapio .preco {
+  font-family: "Tinos", serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #e00e18;
+}
+.cardapio .descricao {
+  margin: 15px 25px;
+  font-size: 12px;
+  color: rgb(110, 109, 109);
+  text-transform: uppercase;
+  line-height: 1.1;
+  height: 60px;
+}
+
+.divCatDisp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.divCategoria strong,
+.divDisponibilidade strong {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgb(116, 113, 113);
+}
+
+.divCategoria .categoria{
+  font-size: 12px;
+}
+
+.divDisponibilidade .disponibilidade{
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.disponivel {
+  background-color: rgb(84, 223, 114); /* Verde claro */
+ /*color: #065f46;  Verde escuro */
+}
+
+.indisponivel {
+  background-color: #fd8e8e; /* Vermelho claro */
+  /* color: #991b1b;  Vermelho escuro */
+}
+
+.card:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
